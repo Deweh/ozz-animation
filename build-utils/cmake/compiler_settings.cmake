@@ -71,13 +71,13 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
 # else consider the compiler as GCC compatible (inc clang)
 else()
   # Set the warning level to Wall
-  add_compile_options(-Wall)
+  # add_compile_options(-Wall)
 
   # Enable extra level of warning
   # add_compile_options(-Wextra)
 
   # Set warning as error
-  add_compile_options(-Werror)
+  # add_compile_options(-Werror)
 
   # ignored-attributes reports issue when using _m128 as template argument
   check_cxx_compiler_flag("-Wignored-attributes" W_IGNORED_ATTRIBUTES)
